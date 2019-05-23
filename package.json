@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "eslint-config-prettier": "^4.3.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6"
   },
@@ -28,9 +29,17 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "prettier"
     ],
-    "rules": {},
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true
+        }
+      ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
